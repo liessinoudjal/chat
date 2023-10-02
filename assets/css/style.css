@@ -1,0 +1,219 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    min-width: 800px;
+    background-color: #dfd3d3;
+}
+.inputFields{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+iframe{
+    color: black;
+}
+h1 {
+    font-size: 1.8em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+fieldset{
+    display: inline-block;
+}
+p,
+label {
+  font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+
+input {
+  margin: 0.4rem;
+}
+
+a {
+    color: #58a6ff;
+}
+
+.head {
+    margin-bottom: 15px;
+}
+
+.subTitle {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.usernamelink {
+    color: #18508f;
+    text-decoration: none;
+}
+
+#roomUserText {
+    width: 100%;
+    text-align: right;
+}
+
+#roomStats {
+    width: 100%;
+    text-align: right;
+}
+
+#roomStats b {
+    margin-right: 20px;
+}
+
+.splitchattable, .splitstatetable {
+    width: 100%;
+}
+
+.splitstatetable td {
+    width: 50%;
+}
+
+.containerheader {
+    text-align: center;
+}
+
+.chatcontainer, .giftcontainer, .eventcontainer, .donateurcontainer, .likecontainer {
+    overflow-y: scroll;
+    height: calc(100vh - 240px);
+    word-wrap: break-word;
+}
+
+.eventcontainer {
+    height: calc(100vh - 90px);
+}
+
+.chatcontainer {
+    min-width: 24vw;
+    max-width: calc(100vw - 430px);
+}
+
+.giftcontainer {
+    min-width: 24vw;
+}
+.donateurcontainer{
+    min-width:24vw;
+}
+.likecontainer{
+    min-width:24vw;
+} 
+
+.likecontainer .rankItem {
+    cursor : url('./speaker.png')
+}
+
+.miniprofilepicture {
+    height: 20px;
+    width: 20px;
+}
+
+.gifticon {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.profileicon {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.order{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.medailleicon {
+    width: 50px;
+    margin-right: 10px;
+}
+select[name="canSpeak"]{
+    max-width: 200px;
+    display: inline-block;
+}
+/* switch button moderator talk */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* switch button moderator talk */
+
+.rankScore{
+    font-weight: bold;
+}
+/* Définition de la classe pour l'élément de texte */
+.transition-text {
+    color: red; /* Couleur de départ */
+    animation: colorTransition 1s forwards; /* Nom de l'animation et durée */
+  }
+  
+  /* Définition de l'animation avec les keyframes */
+  @keyframes colorTransition {
+    from {
+      color: red; /* Couleur de départ */
+    }
+    to {
+      color: black; /* Couleur de fin */
+    }
+  }
